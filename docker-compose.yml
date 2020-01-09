@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  swoole-chat:
+    container_name: swoole-chat
+    image: leleos/php-fpm:7.2
+    ports:
+      - "1000:1000"
+    volumes:
+      - ./swoole-chat:/var/www/html
