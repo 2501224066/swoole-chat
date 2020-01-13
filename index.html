@@ -6,36 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SWOOLE CHAT</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet"/>
 </head>
 <style>
     @font-face {
-        font-family: 'Kongtext';
-        src: url('sources/Kongtext.ttf') format('truetype');
+        font-family: 'KT';
+        src: url('sources/KongText.ttf') format('truetype');
     }
 
     @font-face {
-        font-family: 'PressStart2P';
-        src: url('sources/PressStart2P-1.ttf') format('truetype');
+        font-family: 'MB';
+        src: url('sources/MBitmapSquareHK-Light.otf') format('truetype');
     }
 
     body {
         width: 100%;
         height: 100%;
         padding: 10px;
-        background: #333;
-        color: #fff;
+        background: #2F2213;
+        color: #FDFE00;
+        font-weight: bolder;
+        font-size: 26px;
     }
 
-    body, button, .one {
-        font-family: "Kongtext", "PressStart2P" !important;
+    body, button, .one, input {
+        font-family: "MB" !important;
+        text-shadow: 1px 1px 20px #ECA404;
+    }
+
+    .title {
+        font-family: "KT" !important;
     }
 
     input {
         border: none !important;
-        background: #333 !important;
-        color: #fff !important;
+        background: #2F2213 !important;
+        color: #FDFE00 !important;
         box-shadow: none !important;
+        font-weight: bolder !important;
+        font-size: 26px !important;
     }
 
     input:focus {
