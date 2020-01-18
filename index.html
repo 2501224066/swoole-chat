@@ -9,41 +9,31 @@
 </head>
 <style>
     @font-face {
-        font-family: 'KT';
-        src: url('sources/kongtext.ttf') format('truetype');
-    }
-
-    @font-face {
-        font-family: 'MB';
-        src: url('sources/MBitmapSquareHK-Light.otf') format('truetype');
+        font-family: 'ft';
+        src: url('sources/font.ttf') format('truetype');
     }
 
     body {
         width: 100%;
         height: 100%;
         padding: 10px;
-        background: #2F2213;
-        color: #FDFE00;
+        background: #000;
+        color: #FFF;
         font-weight: bolder;
-        font-size: 24px;
+        font-size: 22px;
     }
 
-    body, button, .one, input {
-        font-family: "MB","KT" !important;
-        text-shadow: 1px 1px 20px #ECA404;
-    }
-
-    .title {
-        font-family: "KT" !important;
+    body, button, .one, input,.title {
+        font-family: "ft" !important;
     }
 
     input {
         border: none !important;
-        background: #2F2213 !important;
-        color: #FDFE00 !important;
+        background: #000 !important;
+        color: #FFFFFF !important;
         box-shadow: none !important;
         font-weight: bolder !important;
-        font-size: 24px !important;
+        font-size: 22px;
     }
 
     input:focus {
@@ -61,7 +51,7 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <h2 class="title">SWOOLE CHAT</h2>
+        <h1 class="title"><strong>SWOOLE CHAT</strong></h1>
         <div class="col-md-12">
             <div id="bb-box">
                 <p class="one" hidden></p>

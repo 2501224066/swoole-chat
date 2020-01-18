@@ -9,7 +9,7 @@ $ws->set([
 //监听WebSocket连接打开事件
 $ws->on('open', function ($ws, $request) {
     $ws->push($request->fd, json_encode([
-        "name" => "Tourist[" . ($request->fd + 10000) . "]",
+        "name" => "# Tourist[" . ($request->fd + 10000) . "]",
         "content" => "Successful connection...",
         "time" => date('Y-m-d H:i:s')
     ]));
@@ -20,7 +20,7 @@ $ws->on('message', function ($ws, $frame) {
     $pushId = $frame->fd;
     foreach ($ws->connections as $fd) {
         $ws->push($fd, json_encode([
-            "name" => "Tourist[" . ($pushId + 10000) . ']',
+            "name" => "# Tourist[" . ($pushId + 10000) . ']',
             "content" => $frame->data,
             "time" => date('Y-m-d H:i:s')
         ]));
