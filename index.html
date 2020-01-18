@@ -10,7 +10,7 @@
 <style>
     @font-face {
         font-family: 'KT';
-        src: url('sources/KongText.ttf') format('truetype');
+        src: url('sources/kongtext.ttf') format('truetype');
     }
 
     @font-face {
@@ -25,11 +25,11 @@
         background: #2F2213;
         color: #FDFE00;
         font-weight: bolder;
-        font-size: 26px;
+        font-size: 16px;
     }
 
     body, button, .one, input {
-        font-family: "MB" !important;
+        font-family: "MB","KT" !important;
         text-shadow: 1px 1px 20px #ECA404;
     }
 
@@ -43,7 +43,7 @@
         color: #FDFE00 !important;
         box-shadow: none !important;
         font-weight: bolder !important;
-        font-size: 26px !important;
+        font-size: 16px !important;
     }
 
     input:focus {
@@ -88,7 +88,7 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
 <script>
-    var wsServer = 'ws://127.0.0.1:1000';
+    var wsServer = 'ws://chat.unclear.top:1000';
     var websocket = new WebSocket(wsServer);
     websocket.onopen = function (evt) {
         console.log("已连上服务器");
